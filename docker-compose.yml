@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    depends_on:
+      - mysql
+    environment:
+      - MYSQL_HOST=mysql
+      - MYSQL_PORT=3306
+      - MYSQL_USER=hl_user
+      - MYSQL_PASSWORD=hl_pass
+      - MYSQL_DATABASE=hl_db
+      - MYSQL_ROOT_PASSWORD=root_pass
+
+  mysql:
+    image: mysql:latest
+    container_name: mysql_container
+    command:
+        - '--skip-log-bin'
+    environment:
+      MYSQL_ROOT_PASSWORD: root_pass
+      MYSQL_DATABASE: hl_db
+      MYSQL_USER: hl_user
+      MYSQL_PASSWORD: hl_pass
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+volumes:
+  mysql_data:
