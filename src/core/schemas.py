@@ -10,7 +10,7 @@ class CreateGameSchema(BaseModel):
     ratings: int = Field(..., ge=0, le=100)
     platforms: list[str]
 
-    _validate_email = field_validator('email')(validate_name)
+    _validate_name = field_validator('name')(validate_name)
 
 class UpdateGameSchema(BaseModel):
     id: int

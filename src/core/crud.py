@@ -5,7 +5,6 @@ from src.core.dependencies import get_db
 
 
 def create_game(game: Game, db=Depends(get_db)):
-    print(game.platforms)
     db_game = Game(
         name=game.name,
         release_date=game.release_date,
