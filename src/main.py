@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from fastapi.exceptions import RequestValidationError
 from fastapi.responses import JSONResponse
 from src.constants import LOGGER_NAME
-from src.core.router import router
+from src.core.router import game_router
 from src.core.database import engine, Base
 
 import logging
@@ -21,12 +21,12 @@ logger.addHandler(console_handler)
 Base.metadata.create_all(bind=engine)
 logger.info("Starting HarfangLab server application...")
 app = FastAPI()
-app.include_router(router)
+app.include_router(game_router, prefix="/games")
 
-@app.exception_handler(RequestValidationError)
+""" @app.exception_handler(RequestValidationError)
 async def validation_exception_handler(request, exc):
     return JSONResponse(
         status_code=400,
         content={"message": "Invalid parameters provided. Please refer to the documentation to "
                  "check the expected parameters"},
-    )
+    ) """
