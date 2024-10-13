@@ -1,0 +1,305 @@
+[
+    {
+        "name": "Cyberpunk 2077",
+        "release_date": "2020-12-10",
+        "studio": "CD Projekt RED",
+        "ratings": 16,
+        "platforms": [
+            "PC",
+            "PS4",
+            "PS5",
+            "Xbox One"
+        ]
+    },
+    {
+        "name": "The Last of Us Part II",
+        "release_date": "2020-06-19",
+        "studio": "Naughty Dog",
+        "ratings": 18,
+        "platforms": [
+            "PS4"
+        ]
+    },
+    {
+        "name": "Ghost of Tsushima",
+        "release_date": "2020-07-17",
+        "studio": "Sucker Punch Productions",
+        "ratings": 19,
+        "platforms": [
+            "PS4"
+        ]
+    },
+    {
+        "name": "Assassin's Creed Valhalla",
+        "release_date": "2020-11-10",
+        "studio": "Ubisoft",
+        "ratings": 17,
+        "platforms": [
+            "PC",
+            "PS4",
+            "PS5",
+            "Xbox One",
+            "Xbox Series X"
+        ]
+    },
+    {
+        "name": "Demon's Souls",
+        "release_date": "2020-11-12",
+        "studio": "Bluepoint Games",
+        "ratings": 19,
+        "platforms": [
+            "PS5"
+        ]
+    },
+    {
+        "name": "Hitman 3",
+        "release_date": "2021-01-20",
+        "studio": "IO Interactive",
+        "ratings": 16,
+        "platforms": [
+            "PC",
+            "PS4",
+            "PS5",
+            "Xbox One",
+            "Xbox Series X"
+        ]
+    },
+    {
+        "name": "Returnal",
+        "release_date": "2021-04-30",
+        "studio": "Housemarque",
+        "ratings": 18,
+        "platforms": [
+            "PS5"
+        ]
+    },
+    {
+        "name": "Resident Evil Village",
+        "release_date": "2021-05-07",
+        "studio": "Capcom",
+        "ratings": 17,
+        "platforms": [
+            "PC",
+            "PS4",
+            "PS5",
+            "Xbox One",
+            "Xbox Series X"
+        ]
+    },
+    {
+        "name": "Ratchet & Clank: Rift Apart",
+        "release_date": "2021-06-11",
+        "studio": "Insomniac Games",
+        "ratings": 19,
+        "platforms": [
+            "PS5"
+        ]
+    },
+    {
+        "name": "Far Cry 6",
+        "release_date": "2021-10-07",
+        "studio": "Ubisoft",
+        "ratings": 16,
+        "platforms": [
+            "PC",
+            "PS4",
+            "PS5",
+            "Xbox One",
+            "Xbox Series X"
+        ]
+    },
+    {
+        "name": "Forza Horizon 5",
+        "release_date": "2021-11-09",
+        "studio": "Playground Games",
+        "ratings": 18,
+        "platforms": [
+            "PC",
+            "Xbox One",
+            "Xbox Series X"
+        ]
+    },
+    {
+        "name": "Halo Infinite",
+        "release_date": "2021-12-08",
+        "studio": "343 Industries",
+        "ratings": 16,
+        "platforms": [
+            "PC",
+            "Xbox One",
+            "Xbox Series X"
+        ]
+    },
+    {
+        "name": "Horizon Forbidden West",
+        "release_date": "2022-02-18",
+        "studio": "Guerrilla Games",
+        "ratings": 19,
+        "platforms": [
+            "PS4",
+            "PS5"
+        ]
+    },
+    {
+        "name": "Elden Ring",
+        "release_date": "2022-02-25",
+        "studio": "FromSoftware",
+        "ratings": 20,
+        "platforms": [
+            "PC",
+            "PS4",
+            "PS5",
+            "Xbox One",
+            "Xbox Series X"
+        ]
+    },
+    {
+        "name": "Gran Turismo 7",
+        "release_date": "2022-03-04",
+        "studio": "Polyphony Digital",
+        "ratings": 18,
+        "platforms": [
+            "PS4",
+            "PS5"
+        ]
+    },
+    {
+        "name": "God of War Ragnarök",
+        "release_date": "2022-11-09",
+        "studio": "Santa Monica Studio",
+        "ratings": 20,
+        "platforms": [
+            "PS4",
+            "PS5"
+        ]
+    },
+    {
+        "name": "Call of Duty: Modern Warfare II",
+        "release_date": "2022-10-28",
+        "studio": "Infinity Ward",
+        "ratings": 17,
+        "platforms": [
+            "PC",
+            "PS4",
+            "PS5",
+            "Xbox One",
+            "Xbox Series X"
+        ]
+    },
+    {
+        "name": "Starfield",
+        "release_date": "2023-09-06",
+        "studio": "Bethesda Game Studios",
+        "ratings": 18,
+        "platforms": [
+            "PC",
+            "Xbox Series X"
+        ]
+    },
+    {
+        "name": "The Legend of Zelda: Tears of the Kingdom",
+        "release_date": "2023-05-12",
+        "studio": "Nintendo",
+        "ratings": 20,
+        "platforms": [
+            "Switch"
+        ]
+    },
+    {
+        "name": "Diablo IV",
+        "release_date": "2023-06-06",
+        "studio": "Blizzard Entertainment",
+        "ratings": 18,
+        "platforms": [
+            "PC",
+            "PS4",
+            "PS5",
+            "Xbox One",
+            "Xbox Series X"
+        ]
+    },
+    {
+        "name": "Final Fantasy XVI",
+        "release_date": "2023-06-22",
+        "studio": "Square Enix",
+        "ratings": 19,
+        "platforms": [
+            "PS5"
+        ]
+    },
+    {
+        "name": "Spider-Man 2",
+        "release_date": "2023-10-20",
+        "studio": "Insomniac Games",
+        "ratings": 19,
+        "platforms": [
+            "PS5"
+        ]
+    },
+    {
+        "name": "Fable",
+        "release_date": "2024-08-22",
+        "studio": "Playground Games",
+        "ratings": 17,
+        "platforms": [
+            "PC",
+            "Xbox Series X"
+        ]
+    },
+    {
+        "name": "Avowed",
+        "release_date": "2024-05-13",
+        "studio": "Obsidian Entertainment",
+        "ratings": 18,
+        "platforms": [
+            "PC",
+            "Xbox Series X"
+        ]
+    },
+    {
+        "name": "Perfect Dark",
+        "release_date": "2024-03-29",
+        "studio": "The Initiative",
+        "ratings": 18,
+        "platforms": [
+            "PC",
+            "Xbox Series X"
+        ]
+    },
+    {
+        "name": "The Witcher 3 : Wild Hunt",
+        "release_date": "2015-05-19",
+        "studio": "CD Projekt RED",
+        "ratings": 19,
+        "platforms": [
+            "PC",
+            "PS4",
+            "PS5",
+            "Switch",
+            "One"
+        ]
+    },
+    {
+        "name": "Mario Kart 8 Deluxe",
+        "release_date": "2017-04-28",
+        "studio": "Nintendo",
+        "ratings": 16,
+        "platforms": [
+            "Switch"
+        ]
+    },
+    {
+        "name": "Don't Starve",
+        "release_date": "2013-04-23",
+        "studio": "Capybara Games",
+        "ratings": 17,
+        "platforms": [
+            "PC",
+            "PS4",
+            "Switch",
+            "One",
+            "WiiU",
+            "PS3"
+        ]
+    }
+]

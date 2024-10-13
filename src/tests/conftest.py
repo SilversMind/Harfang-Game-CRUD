@@ -1,12 +1,15 @@
 import pytest
+import json
+from pathlib import Path
 from sqlalchemy import create_engine, text
 from sqlalchemy.orm import sessionmaker
 from src.core.models import Base
 from fastapi import FastAPI
 from fastapi.testclient import TestClient
 from src.core.router import game_router
+from src.core.utils import transform_platforms
 from src.core.dependencies import get_db
-from src.core.models import Game
+from src.core.models import Game, Platform, game_platforms
 from src.constants import MYSQL_TEST_DATABASE, MYSQL_PASSWORD, MYSQL_USER, MYSQL_HOST, MYSQL_PORT, MYSQL_ROOT_PASSWORD
 
 initial_engine = create_engine(f"mysql+mysqlconnector://root:{MYSQL_ROOT_PASSWORD}@{MYSQL_HOST}:{MYSQL_PORT}")
@@ -44,33 +47,33 @@ def setup_database():
     # Insert mock data
     db = TestingSessionLocal()
     try:
-        # Create mock authors
-        game1 = Game(
-            name="The Witcher 3 : Wild Hunt",
-            release_date="2015-05-19",
-            studio="CD Projekt RED",
-            ratings=19,
-            platforms=["PC, PS4, PS5, Switch, One"]
-        )
-        game2 = Game(
-            name="Mario Kart 8 Deluxe",
-            release_date="2017-04-28",
-            studio="Nintendo",
-            ratings=17,
-            platforms=["Switch"]
-        )
-        game3 = Game(
-            name="Don't Starve",
-            release_date="2013-04-23",
-            studio="Capybara Games",
-            ratings=17,
-            platforms=["PC", "PS4", "Switch", "One", "WiiU", "PS3"]
-        )
-        db.add(game1)
-        db.add(game2)
-        db.add(game3)
-
+        db.execute(game_platforms.delete())
+        db.query(Game).delete()
+        db.query(Platform).delete()
         db.commit()
+
+        with open(Path(__file__).parent / 'test_data/games.json') as f_in:
+            games_data = json.load(f_in)
+            for game_data in games_data:
+                platforms = []
+                for platform_name in game_data["platforms"]:
+                    platform = db.query(Platform).filter_by(name=platform_name).first()
+                    if not platform:
+                        platform = Platform(name=platform_name)
+                        db.add(platform)
+                        db.commit()
+                        db.refresh(platform)
+                    platforms.append(platform)
+
+                game = Game(
+                    name=game_data["name"],
+                    release_date=game_data["release_date"],
+                    studio=game_data["studio"],
+                    ratings=game_data["ratings"],
+                    platforms=platforms
+                )
+                db.add(game)
+            db.commit()
     finally:
         db.close()
 
