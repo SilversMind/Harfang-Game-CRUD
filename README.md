@@ -81,5 +81,3 @@ Avant de commencer, assurez-vous d'avoir installé les éléments suivants :
 - `POST /games`: Ajouter un nouveau jeu
 - `PUT /games/{id}`: Modifier un jeu existant
 - `DELETE /games/{id}`: Supprimer un jeu
-- `GET /platforms`: Lister toutes les plateformes
-
